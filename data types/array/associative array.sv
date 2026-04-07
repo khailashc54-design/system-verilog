@@ -1,7 +1,10 @@
+// Code your testbench here
+// or browse Examples
+
 module tb;
   int array[string];
   initial begin
-    array='{"apple":1,"pineapple":2,"orenge":0,"zoo":0};
+    array='{"pineapple":2,"orenge":0,"zoo":0,"apple":1};
     $display ("size=%0d",array.size());
     $display ("size=%0d",array.num());
     if(array.exists("apple"))begin
@@ -26,10 +29,11 @@ module tb;
       if(array.next(f))
         $display("next=[%s]=%0d",f,array[f]);
       end
-    
+    $display("total=%p",array);
   end
+  
 endmodule
-  //output
+//output
 size=4
 size=4
 yes
@@ -38,3 +42,4 @@ first_array[apple]=1
 last_array[zoo]=0
 prev[pineapple]=2
 next=[orenge]=0
+total='{"apple":1, "orenge":0, "pineapple":2, "zoo":0}
