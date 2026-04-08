@@ -1,6 +1,6 @@
 module tb;
   
-int a,b;
+logic a,b;
   
   initial begin 
     
@@ -36,9 +36,16 @@ int a,b;
     $display("no=%0d",a!==b);
   
   end
+  initial begin 
+    
+     a=1'bx;
+      b=1'bx;
+    
+    if(a==b)begin
+      $display("equal=%0d",a==b);
+      end 
+    else 
+        $display("not equal=%0d",a==b);
+  end
 endmodule
-//output
-equal=1
-NO=0
-not Equal=0
-yes=1
+    
