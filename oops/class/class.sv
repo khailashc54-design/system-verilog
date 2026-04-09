@@ -27,3 +27,7 @@ class arthemetic;
     a2.display();
   end
 endmodule
+//output
+value=0
+value=9
+value=6
