@@ -21,3 +21,7 @@ class arthemetic;
     a1.display();
   end
 endmodule
+// output
+value=0
+value=0
+value=7
