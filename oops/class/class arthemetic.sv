@@ -8,7 +8,6 @@ class subraction;
     c=a/b;
     endfunction
   function void display();
-    $display("_____________");
     $display("value a=%0d",a);
     $display("value b=%0d",b);
     $display("sub c=%0d",c);
@@ -24,7 +23,7 @@ class subraction;
      $display("value a=%0d",a);
     $display("value b=%0d",b);
     $display("add f=%0d",c);
-    $display("_____________");
+    
     
   endfunction 
 endclass 
