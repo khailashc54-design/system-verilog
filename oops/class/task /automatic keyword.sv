@@ -1,6 +1,6 @@
 module tb;
 
-  task  show();
+  task automatic  show();
   int c;
    c=c+1;
    $display("%0d",c);
@@ -14,7 +14,7 @@ initial begin
 end
 
 endmodule
-//output
+//ouput
 # KERNEL: 1
-# KERNEL: 2
-# KERNEL: 3
+# KERNEL: 1
+# KERNEL: 1
