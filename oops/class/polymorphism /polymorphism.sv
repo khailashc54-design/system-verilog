@@ -37,4 +37,9 @@ module poly;
     tr2.display();
   end
 endmodule
+//================output==============\\
+write opetration
+adder=11,data=10
+read opetration
+adder=16,data=12
 
